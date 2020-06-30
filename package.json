@@ -1,0 +1,15 @@
+{
+  "name": "jest-study",
+  "version": "0.0.1",
+  "description": "stydu jest",
+  "main": "index.js",
+  "author": "youngoohan",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "jest": "^26.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

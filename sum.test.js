@@ -43,3 +43,12 @@ test('the data is the word "resolve!"', (done) => {
 
   api.fetchData(callback);
 });
+
+test('the data is the word "resolve!"', () => {
+  api.fetchData().then((data) => expect(data).toBe("resolve!"));
+});
+
+test('the data is the word "resolve!"', async () => {
+  const data = await api.fetchData();
+  expect(data).toBe("resolve!");
+});

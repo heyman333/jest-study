@@ -5,7 +5,8 @@ exports.sum = function (a, b) {
 exports.fetchData = function (callback) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(callback("resolve!"));
+      resolve("resolve!");
+      if (callback) callback("resolve!");
     }, 2000);
   });
 };
